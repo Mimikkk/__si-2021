@@ -11,7 +11,7 @@ def visualize_cost_function(sizes_transformed, prices_transformed, w0_values, w1
 	    for j in w1_values:
 	        points.append([i, j, loss_function(sizes_transformed, prices_transformed, i,j)])
 	#points = array(points)
-    point = array(points,dtype='float')  # dtype is necessary in new version
+    	point = array(points,dtype='float')  # dtype is necessary in new version
 
 	Xs = points[:,0]
 	Ys = points[:,1]
