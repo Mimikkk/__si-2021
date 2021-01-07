@@ -13,7 +13,7 @@ def plot_boundary(logreg, X, Y):
 
         Z = Z.reshape(xx.shape)
         plt.figure(1, figsize=(4, 3))
-        plt.pcolormesh(xx, yy, Z, cmap=plt.cm.Set1)
+        plt.pcolormesh(xx, yy, Z, cmap=plt.cm.Set1,shading='auto')
 
     # Plot also the training points
     plt.scatter(X[:, 0], X[:, 1], c=Y, edgecolors='k', cmap=plt.cm.Set1)
